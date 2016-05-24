@@ -20,7 +20,7 @@ function getPoints(str,xmin,xmax)
   endfor
   while (layer <= numLayers)
     for n = 0:2
-      ycoord = 0.6 * layer
+      ycoord = 0.42 * layer
       xcoord = (fzero(@(x) y(x)-ycoord,[0,100])) - (0.6 * n);
       if (xcoord < 0.0001)
         xcoord = 0;
