@@ -12,7 +12,8 @@ function getPoints(str,xmin,xmax)
   numLayers = range / 0.42;
   numLayers = int16(numLayers);
   layer = 0;
-  fid = fopen("ashwin.gcode",'w+t');
+  filename = [str ".gcode"];
+  fid = fopen(filename,'w+t');
   inString = {"G21\n","M107\n","M190 s55\n","M104 s196\n","G28\n","G1 z5 F5000\n","M109 s196\n","G90\n","G92 E0\n","M82\n"};
   for i=1:(size(inString))(2)
     fputs(fid,inString{i});
