@@ -7,8 +7,11 @@ Function: getPointsTan2(str,xmin,xmax)
 
 Function Usage: getPointsTan2(str,xmin,xmax)
 where:
+
 str is a function of x in single quotes (i.e. 'x^2 + 2*x')
+
 xmin is minimum x bound
+
 xmax is maximum x bound
 
 Created by Ashwin C, Sandra S, Adalie P, Jamie K, Tiffany U, & Jessica S
